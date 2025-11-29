@@ -46,8 +46,6 @@ void PlayerList::FullUpdate(DMA_Connection* Conn)
 
 		Player.Finalize();
 	}
-
-	std::println("[Player List] Updated {} players", m_Players.size());
 }
 
 void PlayerList::QuickUpdate(DMA_Connection* Conn)

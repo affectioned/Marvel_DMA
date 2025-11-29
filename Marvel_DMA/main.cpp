@@ -15,13 +15,50 @@ int main()
 
 	std::thread DMAThreadInstance(DMAThread, Conn, &Marvel::RivalsProc);
 
+#ifndef DLL_FORM
 	MainWindow::Initialize();
+#endif
 
-	while (MainWindow::OnFrame() && bRunning) {}
+	while (bRunning)
+	{
+#ifndef DLL_FORM
+		MainWindow::OnFrame();
+#else 
+		std::this_thread::sleep_for(std::chrono::milliseconds(100));
+#endif
+	}
 
+#ifndef DLL_FORM
 	MainWindow::Cleanup();
+#endif
 
 	DMAThreadInstance.join();
 
 	return 0;
 }
+
+#ifdef DLL_FORM
+DWORD WINAPI StartingThread(HMODULE hMod)
+{
+	return main();
+}
+
+BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReserved)
+{
+	switch (ul_reason_for_call)
+	{
+	case DLL_PROCESS_ATTACH:
+		std::println("[DLL] Marvel Rivals DMA Injected");
+		CreateThread(0, 0, (LPTHREAD_START_ROUTINE)StartingThread, hModule, 0, 0);
+		break;
+	case DLL_THREAD_ATTACH:
+		break;
+	case DLL_THREAD_DETACH:
+		break;
+	case DLL_PROCESS_DETACH:
+		break;
+	}
+
+	return TRUE;
+}
+#endif

@@ -19,27 +19,6 @@
 
 namespace SDK
 {
-
-// Class PhysicsCore.ChaosServerCollisionDebugSubsystem
-// 0x0000 (0x0048 - 0x0048)
-class UChaosServerCollisionDebugSubsystem final : public UTickableWorldSubsystem
-{
-public:
-	static class UChaosServerCollisionDebugSubsystem* GetDebugInstance(const class UObject* WorldContextObject);
-
-public:
-	static class UClass* StaticClass()
-	{
-		return StaticClassImpl<"ChaosServerCollisionDebugSubsystem">();
-	}
-	static class UChaosServerCollisionDebugSubsystem* GetDefaultObj()
-	{
-		return GetDefaultObjImpl<UChaosServerCollisionDebugSubsystem>();
-	}
-};
-static_assert(alignof(UChaosServerCollisionDebugSubsystem) == 0x000008, "Wrong alignment on UChaosServerCollisionDebugSubsystem");
-static_assert(sizeof(UChaosServerCollisionDebugSubsystem) == 0x000048, "Wrong size on UChaosServerCollisionDebugSubsystem");
-
 // Class PhysicsCore.PhysicalMaterialPropertyBase
 // 0x0000 (0x0030 - 0x0030)
 class UPhysicalMaterialPropertyBase final : public UObject

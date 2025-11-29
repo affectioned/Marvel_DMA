@@ -3,6 +3,7 @@
 #include "DMA Thread.h"
 
 #include "Game/Offsets/Offsets.h"
+#include "Game/Marvel.h"
 
 template <typename T, typename F>
 class CTimer
@@ -32,16 +33,13 @@ void DMAThread(DMA_Connection* Conn, Process* MarvelRivals)
 	tracy::SetThreadName("DMA Thread");
 #endif
 
-	CTimer GWorldTimer(std::chrono::seconds(5), [Conn, MarvelRivals]()
-		{
-			uintptr_t GWorldAddress = MarvelRivals->ReadMem<uintptr_t>(Conn, MarvelRivals->GetBaseAddress() + Offsets::GWorld);
-			std::println("GWorld Address: {:#x}", GWorldAddress);
-		}
-	);
+	CTimer RarelyChangedAddresses(std::chrono::seconds(5), [Conn]() {Marvel::UpdateRarelyChangedAddresses(Conn); });
+	CTimer ActorArrayTimer(std::chrono::milliseconds(500), [Conn]() {Marvel::UpdateActorArray(Conn); });
 
 	while (bRunning)
 	{
 		auto CurrentTime = std::chrono::steady_clock::now();
-		GWorldTimer.Tick(CurrentTime);
+		RarelyChangedAddresses.Tick(CurrentTime);
+		ActorArrayTimer.Tick(CurrentTime);
 	}
 }

@@ -25,7 +25,7 @@ public:
 	{
 		VMMDLL_SCATTER_HANDLE vmsh = VMMDLL_Scatter_Initialize(Conn->GetHandle(), m_PID, VMMDLL_FLAG_NOCACHE);
 		DWORD BytesRead{ 0 };
-		T Buffer{ 0 };
+		T Buffer{};
 
 		VMMDLL_Scatter_PrepareEx(vmsh, Address, sizeof(T), reinterpret_cast<BYTE*>(&Buffer), &BytesRead);
 

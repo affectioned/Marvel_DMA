@@ -165,7 +165,14 @@ static_assert(offsetof(FGameplayTagRedirect, NewTagName) == 0x00000C, "Member 'F
 
 // ScriptStruct GameplayTags.GameplayTagTableRow
 // 0x0020 (0x0030 - 0x0010)
-struct FGameplayTagTableRow : public FTableRowBase
+struct alignas(0x08) FTableRowBaseT
+{
+public:
+	uint8                                         Pad_0[0x8];                                        // 0x0000(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	bool                                          Delivery;                                          // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_9[0x7];                                        // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+struct FGameplayTagTableRow : public FTableRowBaseT
 {
 public:
 	class FName                                   Tag;                                               // 0x0010(0x000C)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)

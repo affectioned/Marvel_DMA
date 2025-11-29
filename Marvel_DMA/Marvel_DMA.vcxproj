@@ -121,7 +121,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp23</LanguageStandard>
       <LanguageStandard_C>stdclatest</LanguageStandard_C>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)Dependencies\ImGui;$(SolutionDir)Dependencies\MemProcFS;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)Dependencies\ImGui;$(SolutionDir)Dependencies\MemProcFS;$(SolutionDir)Dependencies\Marvel Rivals SDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -180,7 +180,9 @@
     <ClInclude Include="DMA\Input Manager.h" />
     <ClInclude Include="DMA\MultiScan.h" />
     <ClInclude Include="DMA\Process.h" />
+    <ClInclude Include="Game\Classes\CBaseEntity.h" />
     <ClInclude Include="Game\Marvel.h" />
+    <ClInclude Include="Game\Offsets\Offsets.h" />
     <ClInclude Include="GUI\Main Window\Main Window.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="resource.h" />

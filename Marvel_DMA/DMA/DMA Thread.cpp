@@ -2,6 +2,8 @@
 
 #include "DMA Thread.h"
 
+#include "Game/Offsets/Offsets.h"
+
 template <typename T, typename F>
 class CTimer
 {
@@ -24,17 +26,22 @@ private:
 
 extern std::atomic<bool> bRunning;
 
-void DMAThread(DMA_Connection* Conn, Process* TF2)
+void DMAThread(DMA_Connection* Conn, Process* MarvelRivals)
 {
 #ifdef TRACY_ENABLE
 	tracy::SetThreadName("DMA Thread");
 #endif
 
+	CTimer GWorldTimer(std::chrono::seconds(5), [Conn, MarvelRivals]()
+		{
+			uintptr_t GWorldAddress = MarvelRivals->ReadMem<uintptr_t>(Conn, MarvelRivals->GetBaseAddress() + Offsets::GWorld);
+			std::println("GWorld Address: {:#x}", GWorldAddress);
+		}
+	);
 
 	while (bRunning)
 	{
 		auto CurrentTime = std::chrono::steady_clock::now();
-
-
+		GWorldTimer.Tick(CurrentTime);
 	}
 }

@@ -154,6 +154,12 @@
     <ClCompile Include="..\Dependencies\ImGui\imgui_widgets.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="DMA\DMA Thread.cpp" />
+    <ClCompile Include="DMA\DMA.cpp" />
+    <ClCompile Include="DMA\Input Manager.cpp" />
+    <ClCompile Include="DMA\MultiScan.cpp" />
+    <ClCompile Include="DMA\Process.cpp" />
+    <ClCompile Include="Game\Marvel.cpp" />
     <ClCompile Include="GUI\Main Window\Main Window.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pch.cpp">
@@ -169,8 +175,18 @@
     <ClInclude Include="..\Dependencies\ImGui\imstb_rectpack.h" />
     <ClInclude Include="..\Dependencies\ImGui\imstb_textedit.h" />
     <ClInclude Include="..\Dependencies\ImGui\imstb_truetype.h" />
+    <ClInclude Include="DMA\DMA Thread.h" />
+    <ClInclude Include="DMA\DMA.h" />
+    <ClInclude Include="DMA\Input Manager.h" />
+    <ClInclude Include="DMA\MultiScan.h" />
+    <ClInclude Include="DMA\Process.h" />
+    <ClInclude Include="Game\Marvel.h" />
     <ClInclude Include="GUI\Main Window\Main Window.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Marvel_DMA.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

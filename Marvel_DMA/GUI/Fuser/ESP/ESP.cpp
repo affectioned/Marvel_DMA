@@ -6,11 +6,15 @@
 
 void ESP::Render()
 {
-	std::scoped_lock lock(PlayerList::m_PlayerListMutex);
-
 	auto DrawList = ImGui::GetWindowDrawList();
 	auto WindowPos = ImGui::GetWindowPos();
 
+	DrawPlayers(DrawList, WindowPos);
+}
+
+void ESP::DrawPlayers(ImDrawList* DrawList, ImVec2& WindowPos)
+{
+	std::scoped_lock lock(PlayerList::m_PlayerListMutex);
 	for (auto& Player : PlayerList::m_Players)
 	{
 		if (Player.IsInvalid())
@@ -22,6 +26,8 @@ void ESP::Render()
 		Vector2 ScreenPos{};
 		if (!Camera::WorldToScreen(Player.m_Location, ScreenPos)) continue;
 
-		DrawList->AddCircleFilled(ImVec2(ScreenPos.x + WindowPos.x, ScreenPos.y + WindowPos.y), 5.0f, IM_COL32(255, 0, 0, 255));
+		std::string HealthText = std::format("{0:.0f}/{1:.0f}", Player.m_CurrentHealth, Player.m_MaxHealth);
+		auto TextSize = ImGui::CalcTextSize(HealthText.c_str());
+		DrawList->AddText(ImVec2(ScreenPos.x + WindowPos.x - (TextSize.x / 2), ScreenPos.y + WindowPos.y - 20.0f), IM_COL32(255, 255, 255, 255), HealthText.c_str());
 	}
 }

@@ -4,5 +4,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Marvel_DMA/Marvel_DMA.vcxproj" />
+  <Project Path="Marvel_DMA/Marvel_DMA.vcxproj" Id="19f0047f-6776-484c-8ba0-f0c4b7ffb6c3" />
 </Solution>

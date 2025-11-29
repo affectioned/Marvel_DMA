@@ -37,6 +37,18 @@ void PlayerList::FullUpdate(DMA_Connection* Conn)
 
 	VMMDLL_Scatter_Execute(vmsh);
 
+	VMMDLL_Scatter_Clear(vmsh, Marvel::RivalsProc.GetPID(), VMMDLL_FLAG_NOCACHE);
+
+	for (auto& Player : m_Players)
+	{
+		if (Player.IsInvalid())
+			continue;
+
+		Player.PrepareRead_3(vmsh);
+	}
+
+	VMMDLL_Scatter_Execute(vmsh);
+
 	VMMDLL_Scatter_CloseHandle(vmsh);
 
 	for (auto& Player : m_Players)

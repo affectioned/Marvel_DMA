@@ -9,15 +9,14 @@ void PlayerTable::Render()
 
 	ImGui::Begin("Player Table");
 
-	if (ImGui::BeginTable("##player_table", 7))
+	if (ImGui::BeginTable("##player_table", 6))
 	{
 		ImGui::TableSetupColumn("Player Address");
-		ImGui::TableSetupColumn("Location X");
-		ImGui::TableSetupColumn("Location Y");
-		ImGui::TableSetupColumn("Location Z");
+		ImGui::TableSetupColumn("Location");
 		ImGui::TableSetupColumn("Copy Address");
 		ImGui::TableSetupColumn("Flags");
 		ImGui::TableSetupColumn("Screen Pos");
+		ImGui::TableSetupColumn("Health");
 		ImGui::TableHeadersRow();
 
 		for (auto& Player : PlayerList::m_Players)
@@ -30,11 +29,7 @@ void PlayerTable::Render()
 			ImGui::TableNextColumn();
 			ImGui::Text("0x%p", reinterpret_cast<void*>(Player.m_EntityAddress));
 			ImGui::TableNextColumn();
-			ImGui::Text("%.2f", Player.m_Location.X);
-			ImGui::TableNextColumn();
-			ImGui::Text("%.2f", Player.m_Location.Y);
-			ImGui::TableNextColumn();
-			ImGui::Text("%.2f", Player.m_Location.Z);
+			ImGui::Text("%.2f %.2f %.2f ", Player.m_Location.X, Player.m_Location.Y, Player.m_Location.Z);
 			ImGui::TableNextColumn();
 			if (ImGui::Button(std::format("Copy Address##{}", Player.m_EntityAddress).c_str()))
 				ImGui::SetClipboardText(std::format("0x{:X}", Player.m_EntityAddress).c_str());
@@ -46,6 +41,8 @@ void PlayerTable::Render()
 				ImGui::Text("X: %.2f Y: %.2f", ScreenPosition.x, ScreenPosition.y);
 			else
 				ImGui::Text("N/A");
+			ImGui::TableNextColumn();
+			ImGui::Text("%.2f / %.2f", Player.m_CurrentHealth, Player.m_MaxHealth);
 		}
 
 		ImGui::EndTable();

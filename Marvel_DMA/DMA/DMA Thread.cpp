@@ -2,8 +2,9 @@
 
 #include "DMA Thread.h"
 
-#include "Game/Offsets/Offsets.h"
 #include "Game/Marvel.h"
+#include "Game/Entity List/Entity List.h"
+#include "Game/Entity List/Player List/Player List.h"
 
 template <typename T, typename F>
 class CTimer
@@ -34,12 +35,16 @@ void DMAThread(DMA_Connection* Conn, Process* MarvelRivals)
 #endif
 
 	CTimer RarelyChangedAddresses(std::chrono::seconds(5), [Conn]() {Marvel::UpdateRarelyChangedAddresses(Conn); });
-	CTimer ActorArrayTimer(std::chrono::milliseconds(500), [Conn]() {Marvel::UpdateActorArray(Conn); });
+	CTimer ActorArrayTimer(std::chrono::seconds(5), [Conn]() {Marvel::UpdateActorArray(Conn); });
+	CTimer UpdateActorAddresses(std::chrono::seconds(5), [Conn]() { EntityList::ReadAllActorAddresses(Conn);});
+	CTimer UpdatePlayers(std::chrono::seconds(1), [Conn]() { PlayerList::FullUpdate(Conn);});
 
 	while (bRunning)
 	{
 		auto CurrentTime = std::chrono::steady_clock::now();
 		RarelyChangedAddresses.Tick(CurrentTime);
 		ActorArrayTimer.Tick(CurrentTime);
+		UpdateActorAddresses.Tick(CurrentTime);
+		UpdatePlayers.Tick(CurrentTime);
 	}
 }

@@ -159,8 +159,11 @@
     <ClCompile Include="DMA\Input Manager.cpp" />
     <ClCompile Include="DMA\MultiScan.cpp" />
     <ClCompile Include="DMA\Process.cpp" />
+    <ClCompile Include="Game\Entity List\Entity List.cpp" />
     <ClCompile Include="Game\Marvel.cpp" />
+    <ClCompile Include="Game\Entity List\Player List\Player List.cpp" />
     <ClCompile Include="GUI\Main Window\Main Window.cpp" />
+    <ClCompile Include="GUI\Player Table\Player Table.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
@@ -180,10 +183,15 @@
     <ClInclude Include="DMA\Input Manager.h" />
     <ClInclude Include="DMA\MultiScan.h" />
     <ClInclude Include="DMA\Process.h" />
+    <ClInclude Include="Game\Classes\CActor.h" />
     <ClInclude Include="Game\Classes\CBaseEntity.h" />
+    <ClInclude Include="Game\Classes\CMarvelBaseCharacter.h" />
+    <ClInclude Include="Game\Entity List\Entity List.h" />
     <ClInclude Include="Game\Marvel.h" />
     <ClInclude Include="Game\Offsets\Offsets.h" />
+    <ClInclude Include="Game\Entity List\Player List\Player List.h" />
     <ClInclude Include="GUI\Main Window\Main Window.h" />
+    <ClInclude Include="GUI\Player Table\Player Table.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>

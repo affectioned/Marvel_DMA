@@ -2,15 +2,15 @@
 
 #include "Main Window.h"
 
+#include "GUI/Player Table/Player Table.h"
+
 void Render(ImGuiContext* ctx)
 {
 	ImGui::SetCurrentContext(ctx);
 
 	ImGui::DockSpaceOverViewport(ImGui::GetMainViewport()->ID, nullptr, ImGuiDockNodeFlags_PassthruCentralNode);
 
-	ImGui::Begin("Hello, world!");
-	ImGui::Text("This is some useful text.");
-	ImGui::End();
+	PlayerTable::Render();
 }
 
 bool MainWindow::OnFrame()

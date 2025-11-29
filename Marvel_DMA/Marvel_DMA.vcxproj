@@ -159,6 +159,7 @@
     <ClCompile Include="DMA\Input Manager.cpp" />
     <ClCompile Include="DMA\MultiScan.cpp" />
     <ClCompile Include="DMA\Process.cpp" />
+    <ClCompile Include="Game\Camera\Camera.cpp" />
     <ClCompile Include="Game\Entity List\Entity List.cpp" />
     <ClCompile Include="Game\Marvel.cpp" />
     <ClCompile Include="Game\Entity List\Player List\Player List.cpp" />
@@ -183,6 +184,7 @@
     <ClInclude Include="DMA\Input Manager.h" />
     <ClInclude Include="DMA\MultiScan.h" />
     <ClInclude Include="DMA\Process.h" />
+    <ClInclude Include="Game\Camera\Camera.h" />
     <ClInclude Include="Game\Classes\CActor.h" />
     <ClInclude Include="Game\Classes\CBaseEntity.h" />
     <ClInclude Include="Game\Classes\CMarvelBaseCharacter.h" />

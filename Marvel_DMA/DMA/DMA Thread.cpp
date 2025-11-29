@@ -5,6 +5,7 @@
 #include "Game/Marvel.h"
 #include "Game/Entity List/Entity List.h"
 #include "Game/Entity List/Player List/Player List.h"
+#include "Game/Camera/Camera.h"
 
 template <typename T, typename F>
 class CTimer
@@ -37,7 +38,11 @@ void DMAThread(DMA_Connection* Conn, Process* MarvelRivals)
 	CTimer RarelyChangedAddresses(std::chrono::seconds(5), [Conn]() {Marvel::UpdateRarelyChangedAddresses(Conn); });
 	CTimer ActorArrayTimer(std::chrono::seconds(5), [Conn]() {Marvel::UpdateActorArray(Conn); });
 	CTimer UpdateActorAddresses(std::chrono::seconds(5), [Conn]() { EntityList::ReadAllActorAddresses(Conn);});
-	CTimer UpdatePlayers(std::chrono::seconds(1), [Conn]() { PlayerList::FullUpdate(Conn);});
+	CTimer LocalPlayerAddress(std::chrono::seconds(5), [Conn]() { Marvel::UpdateLocalPlayerAddress(Conn);});
+	CTimer FullCameraUpdate(std::chrono::seconds(5), [Conn]() { Camera::FullUpdate(Conn); });
+	CTimer FullUpdatePlayers(std::chrono::seconds(1), [Conn]() { PlayerList::FullUpdate(Conn);});
+	CTimer QuickCameraUpdate(std::chrono::milliseconds(5), [Conn]() { Camera::QuickUpdate(Conn); });
+	CTimer QuickUpdatePlayers(std::chrono::milliseconds(50), [Conn]() { PlayerList::QuickUpdate(Conn);});
 
 	while (bRunning)
 	{
@@ -45,6 +50,10 @@ void DMAThread(DMA_Connection* Conn, Process* MarvelRivals)
 		RarelyChangedAddresses.Tick(CurrentTime);
 		ActorArrayTimer.Tick(CurrentTime);
 		UpdateActorAddresses.Tick(CurrentTime);
-		UpdatePlayers.Tick(CurrentTime);
+		LocalPlayerAddress.Tick(CurrentTime);
+		FullCameraUpdate.Tick(CurrentTime);
+		FullUpdatePlayers.Tick(CurrentTime);
+		QuickCameraUpdate.Tick(CurrentTime);
+		QuickUpdatePlayers.Tick(CurrentTime);
 	}
 }

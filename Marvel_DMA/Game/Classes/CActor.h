@@ -39,4 +39,17 @@ public:
 		if (m_BytesRead != sizeof(SDK::FVector))
 			SetInvalid();
 	}
+	void QuickRead(VMMDLL_SCATTER_HANDLE vmsh)
+	{
+		if (IsInvalid())
+			return;
+
+		uintptr_t LocationPtr = m_RootComponentAddress + Offsets::SceneComponent::Location;
+		VMMDLL_Scatter_PrepareEx(vmsh, LocationPtr, sizeof(SDK::FVector), reinterpret_cast<BYTE*>(&m_Location), reinterpret_cast<DWORD*>(&m_BytesRead));
+	}
+	void QuickFinalize()
+	{
+		if (m_BytesRead != sizeof(SDK::FVector))
+			SetInvalid();
+	}
 };

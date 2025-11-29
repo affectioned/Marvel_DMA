@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Player Table.h"
 #include "Game/Entity List/Player List/Player List.h"
+#include "Game/Camera/Camera.h"
 
 void PlayerTable::Render()
 {
@@ -8,7 +9,7 @@ void PlayerTable::Render()
 
 	ImGui::Begin("Player Table");
 
-	if (ImGui::BeginTable("##player_table", 6))
+	if (ImGui::BeginTable("##player_table", 7))
 	{
 		ImGui::TableSetupColumn("Player Address");
 		ImGui::TableSetupColumn("Location X");
@@ -16,12 +17,14 @@ void PlayerTable::Render()
 		ImGui::TableSetupColumn("Location Z");
 		ImGui::TableSetupColumn("Copy Address");
 		ImGui::TableSetupColumn("Flags");
+		ImGui::TableSetupColumn("Screen Pos");
 		ImGui::TableHeadersRow();
 
 		for (auto& Player : PlayerList::m_Players)
 		{
-			if (Player.IsInvalid())
-				continue;
+			if (Player.IsInvalid())	continue;
+
+			if (Player.m_TypeFlags != 0x100) continue;
 
 			ImGui::TableNextRow();
 			ImGui::TableNextColumn();
@@ -37,6 +40,12 @@ void PlayerTable::Render()
 				ImGui::SetClipboardText(std::format("0x{:X}", Player.m_EntityAddress).c_str());
 			ImGui::TableNextColumn();
 			ImGui::Text("0x%X", Player.m_TypeFlags);
+			ImGui::TableNextColumn();
+			Vector2 ScreenPosition{};
+			if (Camera::WorldToScreen(Player.m_Location, ScreenPosition))
+				ImGui::Text("X: %.2f Y: %.2f", ScreenPosition.x, ScreenPosition.y);
+			else
+				ImGui::Text("N/A");
 		}
 
 		ImGui::EndTable();

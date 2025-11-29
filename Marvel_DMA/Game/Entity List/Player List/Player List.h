@@ -11,4 +11,5 @@ public:
 
 public:
 	static void FullUpdate(DMA_Connection* Conn);
+	static void QuickUpdate(DMA_Connection* Conn);
 };

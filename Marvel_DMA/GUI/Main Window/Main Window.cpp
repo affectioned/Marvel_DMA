@@ -3,6 +3,7 @@
 #include "Main Window.h"
 
 #include "GUI/Player Table/Player Table.h"
+#include "GUI/Fuser/Fuser.h"
 
 void Render(ImGuiContext* ctx)
 {
@@ -10,6 +11,7 @@ void Render(ImGuiContext* ctx)
 
 	ImGui::DockSpaceOverViewport(ImGui::GetMainViewport()->ID, nullptr, ImGuiDockNodeFlags_PassthruCentralNode);
 
+	Fuser::Render();
 	PlayerTable::Render();
 }
 

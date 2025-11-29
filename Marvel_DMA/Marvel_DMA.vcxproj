@@ -163,6 +163,8 @@
     <ClCompile Include="Game\Entity List\Entity List.cpp" />
     <ClCompile Include="Game\Marvel.cpp" />
     <ClCompile Include="Game\Entity List\Player List\Player List.cpp" />
+    <ClCompile Include="GUI\Fuser\ESP\ESP.cpp" />
+    <ClCompile Include="GUI\Fuser\Fuser.cpp" />
     <ClCompile Include="GUI\Main Window\Main Window.cpp" />
     <ClCompile Include="GUI\Player Table\Player Table.cpp" />
     <ClCompile Include="main.cpp" />
@@ -192,6 +194,8 @@
     <ClInclude Include="Game\Marvel.h" />
     <ClInclude Include="Game\Offsets\Offsets.h" />
     <ClInclude Include="Game\Entity List\Player List\Player List.h" />
+    <ClInclude Include="GUI\Fuser\ESP\ESP.h" />
+    <ClInclude Include="GUI\Fuser\Fuser.h" />
     <ClInclude Include="GUI\Main Window\Main Window.h" />
     <ClInclude Include="GUI\Player Table\Player Table.h" />
     <ClInclude Include="pch.h" />

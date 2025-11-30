@@ -36,6 +36,7 @@ void Fuser::RenderSettings()
 
 	ImGui::Checkbox("Enable Fuser", &bFuser);
 
+	ImGui::SetNextItemWidth(50.0f);
 	ImGui::InputScalar("Monitor Index", ImGuiDataType_U8, &MonitorIndex);
 
 	ESP::RenderSettings();

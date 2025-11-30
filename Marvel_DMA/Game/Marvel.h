@@ -19,4 +19,12 @@ public:
 public:
 	static void UpdateLocalPlayerAddress(DMA_Connection* Conn);
 	static inline uintptr_t m_LocalPlayerAddress{ 0 };
+
+private:
+	static inline std::mutex LocalPlayerMutex;
+	static inline int32_t m_LocalTeamID{};
+	
+public:
+	static bool IsFriendly(int32_t TeamID);
+	static void SetLocalTeamID(int32_t NewTeamID);
 };

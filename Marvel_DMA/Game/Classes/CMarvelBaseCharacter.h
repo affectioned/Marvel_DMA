@@ -1,5 +1,5 @@
 #pragma once
-#include "CActor.h"
+#include "CPawn.h"
 #include "SDK/Marvel_classes.hpp"
 
 inline const std::unordered_map<int32_t, std::string> hero_id_map = {
@@ -68,7 +68,7 @@ inline const std::unordered_map<int32_t, std::string> hero_id_map = {
 	{4019, "Ultron Drone"},
 };
 
-class CMarvelBaseCharacter : public CActor
+class CMarvelBaseCharacter : public CPawn
 {
 public:
 	uintptr_t m_ReactivePropertyComponentAddress{ 0 };
@@ -76,11 +76,12 @@ public:
 	float m_CurrentHealth{ 0.0f };
 	float m_MaxHealth{ 0.0f };
 	int32_t m_HeroID{ 0 };
+	int32_t m_TeamID{ 0 };
 
 public:
 	void PrepareRead_1(VMMDLL_SCATTER_HANDLE vmsh)
 	{
-		CActor::PrepareRead_1(vmsh);
+		CPawn::PrepareRead_1(vmsh);
 
 		if (IsInvalid())
 			return;
@@ -93,13 +94,19 @@ public:
 	}
 	void PrepareRead_2(VMMDLL_SCATTER_HANDLE vmsh)
 	{
-		CActor::PrepareRead_2(vmsh);
+		CPawn::PrepareRead_2(vmsh);
 
 		if (!m_ReactivePropertyComponentAddress)
 			SetInvalid();
 
+		if (!m_PlayerStateAddress)
+			SetInvalid();
+
 		if (IsInvalid())
 			return;
+
+		uintptr_t TeamIDPtr = m_PlayerStateAddress + offsetof(SDK::AMarvelPlayerState, OriginalTeamID);
+		VMMDLL_Scatter_PrepareEx(vmsh, TeamIDPtr, sizeof(int32_t), reinterpret_cast<BYTE*>(&m_TeamID), nullptr);
 
 		uintptr_t CachedAttributeSetPtr = m_ReactivePropertyComponentAddress + offsetof(SDK::UReactivePropertyComponent, CachedAttributeSet);
 		VMMDLL_Scatter_PrepareEx(vmsh, CachedAttributeSetPtr, sizeof(uintptr_t), reinterpret_cast<BYTE*>(&m_CachedAttributeSetAddress), nullptr);
@@ -118,13 +125,10 @@ public:
 		uintptr_t MaxHealthPtr = m_CachedAttributeSetAddress + offsetof(SDK::UMarvelBaseAttributeSet, MaxHealth) + offsetof(SDK::FGameplayAttributeData, CurrentValue);
 		VMMDLL_Scatter_PrepareEx(vmsh, MaxHealthPtr, sizeof(float), reinterpret_cast<BYTE*>(&m_MaxHealth), nullptr);
 	}
-	void Finalize()
-	{
-		CActor::Finalize();
-	}
+	void Finalize();
 	void QuickRead(VMMDLL_SCATTER_HANDLE vmsh)
 	{
-		CActor::QuickRead(vmsh);
+		CPawn::QuickRead(vmsh);
 
 		if (m_CachedAttributeSetAddress == 0)
 			SetInvalid();
@@ -156,4 +160,9 @@ public:
 	{
 		return !IsAlive();
 	}
+	const bool IsLocallyControlled() const
+	{
+		return m_ControllerAddress;
+	}
+	const bool IsFriendly() const;
 };

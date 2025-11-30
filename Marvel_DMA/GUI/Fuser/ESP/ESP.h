@@ -17,4 +17,5 @@ private:
 	static inline bool bDrawPlayers{ true };
 	static inline bool bDrawNametag{ true };
 	static inline bool bDrawHealthbar{ true };
+	static inline bool bHideFriendly{ false };
 };

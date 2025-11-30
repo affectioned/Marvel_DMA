@@ -3,6 +3,7 @@
 #include "ESP.h"
 #include "Game/Camera/Camera.h"
 #include "Game/Entity List/Player List/Player List.h"
+#include "GUI/Color Picker/Color Picker.h"
 
 void ESP::Render()
 {
@@ -17,6 +18,7 @@ void ESP::RenderSettings()
 	ImGui::Checkbox("Player ESP", &bDrawPlayers);
 	ImGui::Checkbox("Nametag", &bDrawNametag);
 	ImGui::Checkbox("Healthbar", &bDrawHealthbar);
+	ImGui::Checkbox("Hide Friendly", &bHideFriendly);
 }
 
 void ESP::DrawPlayers(ImDrawList* DrawList, ImVec2& WindowPos)
@@ -28,6 +30,12 @@ void ESP::DrawPlayers(ImDrawList* DrawList, ImVec2& WindowPos)
 	for (auto& Player : PlayerList::m_Players)
 	{
 		if (Player.IsInvalid())
+			continue;
+
+		if (bHideFriendly && Player.IsFriendly())
+			continue;
+
+		if (Player.IsLocallyControlled())
 			continue;
 
 		Vector2 ScreenPos{};
@@ -43,11 +51,18 @@ void ESP::DrawPlayers(ImDrawList* DrawList, ImVec2& WindowPos)
 	}
 }
 
+ImColor GetPlayerColor(CMarvelBaseCharacter& Player)
+{
+	if (Player.IsFriendly()) return ColorPicker::FriendlyColor;
+
+	return ColorPicker::EnemyColor;
+}
+
 void ESP::DrawPlayerText(CMarvelBaseCharacter& Player, ImDrawList* DrawList, const ImVec2& WindowPos, const Vector2& ScreenPosition, int& LineNumber)
 {
 	std::string ESPString = std::format("{0:s}", Player.GetHeroName().c_str());
 	auto TextSize = ImGui::CalcTextSize(ESPString.c_str());
-	DrawList->AddText(ImVec2(ScreenPosition.x + WindowPos.x - (TextSize.x / 2), ScreenPosition.y + WindowPos.y + (LineNumber * TextSize.y)), IM_COL32(255, 255, 255, 255), ESPString.c_str());
+	DrawList->AddText(ImVec2(ScreenPosition.x + WindowPos.x - (TextSize.x / 2), ScreenPosition.y + WindowPos.y + (LineNumber * TextSize.y)), GetPlayerColor(Player), ESPString.c_str());
 	LineNumber++;
 }
 

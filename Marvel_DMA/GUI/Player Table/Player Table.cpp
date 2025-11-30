@@ -9,13 +9,16 @@ void PlayerTable::Render()
 
 	ImGui::Begin("Player Table");
 
-	if (ImGui::BeginTable("##player_table", 5))
+	if (ImGui::BeginTable("##player_table", 8))
 	{
 		ImGui::TableSetupColumn("Player Address");
 		ImGui::TableSetupColumn("Location");
 		ImGui::TableSetupColumn("Copy Address");
 		ImGui::TableSetupColumn("Screen Pos");
 		ImGui::TableSetupColumn("Health");
+		ImGui::TableSetupColumn("Team");
+		ImGui::TableSetupColumn("Contoller");
+		ImGui::TableSetupColumn("Friendly?");
 		ImGui::TableHeadersRow();
 
 		for (auto& Player : PlayerList::m_Players)
@@ -38,6 +41,12 @@ void PlayerTable::Render()
 				ImGui::Text("N/A");
 			ImGui::TableNextColumn();
 			ImGui::Text("%.2f / %.2f", Player.m_CurrentHealth, Player.m_MaxHealth);
+			ImGui::TableNextColumn();
+			ImGui::Text("%d", Player.m_TeamID);
+			ImGui::TableNextColumn();
+			ImGui::Text("%X", Player.m_ControllerAddress);
+			ImGui::TableNextColumn();
+			ImGui::Text("%d", Player.IsFriendly());
 		}
 
 		ImGui::EndTable();

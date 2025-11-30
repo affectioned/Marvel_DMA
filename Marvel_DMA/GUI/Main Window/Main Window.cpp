@@ -4,6 +4,7 @@
 
 #include "GUI/Player Table/Player Table.h"
 #include "GUI/Fuser/Fuser.h"
+#include "GUI/Color Picker/Color Picker.h"
 
 void Render(ImGuiContext* ctx)
 {
@@ -14,6 +15,8 @@ void Render(ImGuiContext* ctx)
 	Fuser::Render();
 
 	Fuser::RenderSettings();
+
+	ColorPicker::Render();
 
 	PlayerTable::Render();
 }

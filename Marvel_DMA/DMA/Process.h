@@ -1,5 +1,7 @@
 #pragma once
 
+#include "DMA/DMA.h"
+
 namespace ConstStrings
 {
 	const std::string Game = "Marvel-Win64-Shipping.exe";

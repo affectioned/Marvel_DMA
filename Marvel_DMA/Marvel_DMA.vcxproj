@@ -234,9 +234,11 @@
     <ClCompile Include="DMA\MultiScan.cpp" />
     <ClCompile Include="DMA\Process.cpp" />
     <ClCompile Include="Game\Camera\Camera.cpp" />
+    <ClCompile Include="Game\Classes\CMarvelBaseCharacter.cpp" />
     <ClCompile Include="Game\Entity List\Entity List.cpp" />
     <ClCompile Include="Game\Marvel.cpp" />
     <ClCompile Include="Game\Entity List\Player List\Player List.cpp" />
+    <ClCompile Include="GUI\Color Picker\Color Picker.cpp" />
     <ClCompile Include="GUI\Fuser\ESP\ESP.cpp" />
     <ClCompile Include="GUI\Fuser\Fuser.cpp" />
     <ClCompile Include="GUI\Main Window\Main Window.cpp" />
@@ -265,10 +267,12 @@
     <ClInclude Include="Game\Classes\CActor.h" />
     <ClInclude Include="Game\Classes\CBaseEntity.h" />
     <ClInclude Include="Game\Classes\CMarvelBaseCharacter.h" />
+    <ClInclude Include="Game\Classes\CPawn.h" />
     <ClInclude Include="Game\Entity List\Entity List.h" />
     <ClInclude Include="Game\Marvel.h" />
     <ClInclude Include="Game\Offsets\Offsets.h" />
     <ClInclude Include="Game\Entity List\Player List\Player List.h" />
+    <ClInclude Include="GUI\Color Picker\Color Picker.h" />
     <ClInclude Include="GUI\Fuser\ESP\ESP.h" />
     <ClInclude Include="GUI\Fuser\Fuser.h" />
     <ClInclude Include="GUI\Main Window\Main Window.h" />

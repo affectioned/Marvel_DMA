@@ -56,3 +56,15 @@ void Marvel::UpdateLocalPlayerAddress(DMA_Connection* Conn)
 
 	std::println("[Marvel] Local Player @ {0:X}", m_LocalPlayerAddress);
 }
+
+bool Marvel::IsFriendly(int32_t TeamID)
+{
+	std::scoped_lock Lock(LocalPlayerMutex);
+	return m_LocalTeamID == TeamID;
+}
+
+void Marvel::SetLocalTeamID(int32_t NewTeamID)
+{
+	std::scoped_lock Lock(LocalPlayerMutex);
+	m_LocalTeamID = NewTeamID;
+}

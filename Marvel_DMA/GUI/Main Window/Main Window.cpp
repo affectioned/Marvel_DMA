@@ -12,6 +12,9 @@ void Render(ImGuiContext* ctx)
 	ImGui::DockSpaceOverViewport(ImGui::GetMainViewport()->ID, nullptr, ImGuiDockNodeFlags_PassthruCentralNode);
 
 	Fuser::Render();
+
+	Fuser::RenderSettings();
+
 	PlayerTable::Render();
 }
 

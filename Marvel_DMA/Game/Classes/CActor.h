@@ -7,7 +7,6 @@ class CActor : public CBaseEntity
 public:
 	SDK::FVector m_Location{};
 	uintptr_t m_RootComponentAddress{};
-	uint32_t m_TypeFlags{};
 
 public:
 	CActor(uintptr_t EntityAddress) : CBaseEntity(EntityAddress) {};
@@ -20,9 +19,6 @@ public:
 
 		uintptr_t RootComponentPtr = m_EntityAddress + offsetof(SDK::AActor, RootComponent);
 		VMMDLL_Scatter_PrepareEx(vmsh, RootComponentPtr, sizeof(uintptr_t), reinterpret_cast<BYTE*>(&m_RootComponentAddress), reinterpret_cast<DWORD*>(&m_BytesRead));
-
-		uintptr_t TypeFlagsPtr = m_EntityAddress + Offsets::Actor::TypeCheck;
-		VMMDLL_Scatter_PrepareEx(vmsh, TypeFlagsPtr, sizeof(uint32_t), reinterpret_cast<BYTE*>(&m_TypeFlags), nullptr);
 	}
 	void PrepareRead_2(VMMDLL_SCATTER_HANDLE vmsh)
 	{

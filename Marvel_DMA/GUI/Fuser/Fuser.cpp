@@ -30,6 +30,19 @@ void Fuser::Render()
 	ImGui::PopStyleColor(2);
 }
 
+void Fuser::RenderSettings()
+{
+	ImGui::Begin("Fuser Settings");
+
+	ImGui::Checkbox("Enable Fuser", &bFuser);
+
+	ImGui::InputScalar("Monitor Index", ImGuiDataType_U8, &MonitorIndex);
+
+	ESP::RenderSettings();
+
+	ImGui::End();
+}
+
 void Fuser::PopulateMonitors()
 {
 	MonitorRects.clear();

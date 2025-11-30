@@ -9,12 +9,11 @@ void PlayerTable::Render()
 
 	ImGui::Begin("Player Table");
 
-	if (ImGui::BeginTable("##player_table", 6))
+	if (ImGui::BeginTable("##player_table", 5))
 	{
 		ImGui::TableSetupColumn("Player Address");
 		ImGui::TableSetupColumn("Location");
 		ImGui::TableSetupColumn("Copy Address");
-		ImGui::TableSetupColumn("Flags");
 		ImGui::TableSetupColumn("Screen Pos");
 		ImGui::TableSetupColumn("Health");
 		ImGui::TableHeadersRow();
@@ -22,8 +21,6 @@ void PlayerTable::Render()
 		for (auto& Player : PlayerList::m_Players)
 		{
 			if (Player.IsInvalid())	continue;
-
-			if (Player.m_TypeFlags != 0x100) continue;
 
 			ImGui::TableNextRow();
 			ImGui::TableNextColumn();
@@ -33,8 +30,6 @@ void PlayerTable::Render()
 			ImGui::TableNextColumn();
 			if (ImGui::Button(std::format("Copy Address##{}", Player.m_EntityAddress).c_str()))
 				ImGui::SetClipboardText(std::format("0x{:X}", Player.m_EntityAddress).c_str());
-			ImGui::TableNextColumn();
-			ImGui::Text("0x%X", Player.m_TypeFlags);
 			ImGui::TableNextColumn();
 			Vector2 ScreenPosition{};
 			if (Camera::WorldToScreen(Player.m_Location, ScreenPosition))

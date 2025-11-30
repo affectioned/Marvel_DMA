@@ -4,11 +4,11 @@ class Fuser
 {
 public:
 	static void Render();
+	static void RenderSettings();
 
 public:
 	static inline bool bFuser{ true };
 	static inline uint8_t MonitorIndex{ 1 };
-	static inline bool bBoldText{ false };
 	static inline float fTextSize{ 14.0f };
 
 private:

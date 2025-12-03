@@ -238,6 +238,7 @@
     <ClCompile Include="Game\Entity List\Entity List.cpp" />
     <ClCompile Include="Game\Marvel.cpp" />
     <ClCompile Include="Game\Entity List\Player List\Player List.cpp" />
+    <ClCompile Include="Game\Offsets\Offsets.cpp" />
     <ClCompile Include="GUI\Color Picker\Color Picker.cpp" />
     <ClCompile Include="GUI\Fuser\ESP\ESP.cpp" />
     <ClCompile Include="GUI\Fuser\Fuser.cpp" />

@@ -11,7 +11,8 @@ int main()
 	std::println("Hello, Marvel_DMA!");
 
 	DMA_Connection* Conn = DMA_Connection::GetInstance();
-	Marvel::RivalsProc.GetProcessInfo(Conn);
+
+	Marvel::Initialize(Conn);
 
 	std::thread DMAThreadInstance(DMAThread, Conn, &Marvel::RivalsProc);
 

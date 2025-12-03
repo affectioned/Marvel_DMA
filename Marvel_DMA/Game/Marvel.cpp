@@ -3,6 +3,15 @@
 #include "Marvel.h"
 #include "Game/Offsets/Offsets.h"
 
+bool Marvel::Initialize(DMA_Connection* Conn)
+{
+	Marvel::RivalsProc.GetProcessInfo(Conn);
+
+	Offsets::ResolveAll(Conn);
+
+	return false;
+}
+
 void Marvel::UpdateRarelyChangedAddresses(DMA_Connection* Conn)
 {
 	uintptr_t GWorldPtrAddress = Marvel::RivalsProc.GetBaseAddress() + Offsets::GWorld;
@@ -28,8 +37,6 @@ void Marvel::UpdateRarelyChangedAddresses(DMA_Connection* Conn)
 		std::println("Failed to read OwningGameInstance address.");
 		return;
 	}
-
-	std::println("Successfully updated rarely changed addresses:\n  GWorld: {0:X}\n  Persistent Level: {1:X}\n  Owning Game Instance: {2:X}", m_GWorldAddress, m_PersistentLevelAddress, m_OwningGameInstance);
 }
 
 void Marvel::UpdateActorArray(DMA_Connection* Conn)
@@ -39,8 +46,6 @@ void Marvel::UpdateActorArray(DMA_Connection* Conn)
 
 	uintptr_t ActorArrayPtr = m_PersistentLevelAddress + offsetof(SDK::ULevel, Actors) + offsetof(SDK::TArray<uintptr_t>, Data);
 	m_Actors = Marvel::RivalsProc.ReadMem<SDK::TArray<uintptr_t>>(Conn, ActorArrayPtr);
-
-	std::println("Successfully updated actor array. Actor count: {}", m_Actors.Num());
 }
 
 void Marvel::UpdateLocalPlayerAddress(DMA_Connection* Conn)
@@ -53,8 +58,6 @@ void Marvel::UpdateLocalPlayerAddress(DMA_Connection* Conn)
 	uintptr_t FirstLocalPlayerAddress = Marvel::RivalsProc.ReadMem<uintptr_t>(Conn, LocalPlayerArrayAddress);
 
 	m_LocalPlayerAddress = FirstLocalPlayerAddress;
-
-	std::println("[Marvel] Local Player @ {0:X}", m_LocalPlayerAddress);
 }
 
 bool Marvel::IsFriendly(int32_t TeamID)

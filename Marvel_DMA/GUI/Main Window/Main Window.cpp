@@ -18,7 +18,7 @@ void Render(ImGuiContext* ctx)
 
 	ColorPicker::Render();
 
-	PlayerTable::Render();
+	//PlayerTable::Render();
 }
 
 bool MainWindow::OnFrame()

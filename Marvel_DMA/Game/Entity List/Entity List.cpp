@@ -35,8 +35,6 @@ void EntityList::ReadAllActorAddresses(DMA_Connection* Conn)
 		return;
 	}
 
-	std::println("[Entity List] Updated {} actor addresses.", m_AllActors.size());
-
 	m_TypeCheck.resize(m_AllActors.size());
 
 	for (size_t i = 0; i < m_AllActors.size(); i++)
@@ -59,6 +57,4 @@ void EntityList::ReadAllActorAddresses(DMA_Connection* Conn)
 		if (TypeCheck == 0x100)
 			PlayerList::m_PlayerAddresses.push_back(ActorAddr);
 	}
-
-	std::println("[Entity List] Found {} player characters.", PlayerList::m_PlayerAddresses.size());
 }

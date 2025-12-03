@@ -4,6 +4,7 @@
 class Marvel
 {
 public:
+	static bool Initialize(DMA_Connection* Conn);
 	static inline Process RivalsProc{};
 
 public:

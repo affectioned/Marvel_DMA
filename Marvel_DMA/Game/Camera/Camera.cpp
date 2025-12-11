@@ -7,6 +7,8 @@
 #include <numbers>
 #include <d3d9types.h>
 
+#include "GUI/Fuser/Fuser.h"
+
 SDK::FMinimalViewInfo Camera::GetViewInfo()
 {
 	std::scoped_lock lock(m_LocalPlayerMutex);
@@ -100,7 +102,7 @@ bool Camera::WorldToScreen(SDK::FVector& WorldLocation, Vector2& ScreenLocation)
 	auto& cameraPOVRotation = ViewInfo.Rotation;
 	const auto& cameraFOV = ViewInfo.FOV;
 
-	auto WindowSize = ImVec2(1920, 1080);
+	auto WindowSize = ImVec2(Fuser::GetCurrentWidth(), Fuser::GetCurrentHeight());
 	const double halfScreenWidth = static_cast<double>(WindowSize.x) / 2.0;
 	const double halfScreenHeight = static_cast<double>(WindowSize.y) / 2.0;
 
